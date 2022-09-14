@@ -12,11 +12,14 @@ namespace Example5
         {
             int a;
             int answer;
+            double resSqrt;
             while (1 == 1)
             {
                 Console.WriteLine("Give me a number");
                 a = int.Parse(Console.ReadLine());
                 answer = MyMath.Factorial(a);
+                resSqrt = Math.Sqrt(a);
+                Console.WriteLine("The square of "+a+ " is "+resSqrt);
                 Console.WriteLine("The factorial of " + a + " is " + answer);
             }
 
